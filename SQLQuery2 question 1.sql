@@ -57,3 +57,5 @@ select  [ProductCategoryID] pc ,[Name] pc, COUNT([ProductID] ) from [Production]
 left join [Production].[ProductSubcategory] psc on psc.ProductSubcategoryID = p.ProductSubcategoryID 
 left join [Production].[ProductCategory] pc on pc.ProductCategoryID = psc.ProductCategoryID
 group by pc.ProductCategoryID ,pc.Name
+
+---Select--
